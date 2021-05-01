@@ -1,0 +1,128 @@
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: var(--violet_light);
+  height: 30px;
+  padding: 0 40px;
+}
+
+.location {
+  margin: 0;
+  color: #fff;
+  font-size: var(--text1);
+  width: 50%;
+  display: flex;
+}
+
+.phone, .mail {
+  margin: 0;
+  width: 25%;
+  display: flex;
+}
+
+.phone svg, .mail svg {
+  margin-right: 5px;
+}
+
+.phone a, .mail a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: var(--text1);
+}
+
+.light, .dark {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 5px 35px;
+  height: 51px;
+  z-index: 2;
+}
+
+.light {
+  background: linear-gradient(#fff, rgba(255, 255, 255, 0.5), transparent);
+}
+
+.fix {
+  position: fixed;
+  top: 0;
+}
+
+.dark {
+  background: var(--violet_dark);
+}
+
+.logo {
+  width: 100%;
+  display: flex;
+}
+
+.logo img {
+  width: 150px;
+}
+
+.light .links a {
+  color: var(--violet_dark);
+}
+
+.dark .links a {
+  color: #ccaafd;
+}
+
+.links a {
+  text-decoration: none;
+  font-weight: 300;
+  margin-right: 10px;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.active {
+  color: var(--red) !important;
+  font-weight: 400 !important;
+}
+
+/* tablet */
+@media (max-width: 780px) {
+  .phone, .mail, .location {
+    width: 33.3%;
+  }
+}
+
+/* celular */
+@media (max-width: 600px) {
+  .phone span, .mail span {
+    display: none;
+  }
+  .phone, .mail {
+    width: 15%;
+    justify-content: center;
+  }
+  .location {
+    width: 70%;
+    justify-content: center;
+    padding-left: 10%;
+  }
+  .head {
+    padding: 0;
+  }
+
+  .links {
+    display: none;
+  }
+  .logo {
+    justify-content: center;
+  }
+}

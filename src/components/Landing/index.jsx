@@ -1,9 +1,10 @@
 import React from 'react'
+import './styles.css'
 
 export default function Landing() {
   return (
-    <div>
-      Landing
+    <div className="landing">
+      <div className="over"></div>
     </div>
   )
 }

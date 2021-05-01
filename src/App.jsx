@@ -2,7 +2,8 @@ import React from 'react'
 
 import Header from './components/Header'
 import Landing from './components/Landing'
-import Body from './components/Body'
+import Services from './components/Services'
+import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 function App() {
@@ -10,8 +11,9 @@ function App() {
     <>
       <Header />
       <Landing />
-      <Body />
-      <Footer />
+      <Services />
+      {/* <Contact /> */}
+      {/* <Footer /> */}
     </>
   );
 }

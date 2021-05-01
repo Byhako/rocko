@@ -1,8 +1,7 @@
 body {
+  width: 100%;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Ubuntu', Verdana, Geneva, sans-serif, -apple-system;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +9,27 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+button {
+  outline: none;
+  font-family: 'Ubuntu', Verdana, Geneva, sans-serif, -apple-system;
+}
+
+div, p, nav {
+  box-sizing: border-box;
+  font-family: 'Ubuntu', Verdana, Geneva, sans-serif, -apple-system;
+}
+
+a, span {
+  font-family: 'Ubuntu', Verdana, Geneva, sans-serif, -apple-system;
+}
+
+:root {
+  --violet_dark: #2C1A47;
+  --violet_light: #715e8d;
+  --red: #d80b1e;
+  --title1: 18px;
+  --text1: 16px;
+  --text_small: 14px;
 }
