@@ -1,0 +1,78 @@
+.carousel {
+  display: flex;
+  align-items: center;
+  padding: 10px 40px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+}
+
+.train {
+  background-image: url('../../images/Training.svg');
+}
+.vet {
+  background-image: url('../../images/Veterinary.svg');
+}
+.solid {
+  background: var(--violet_dark);
+}
+
+.arrow {
+  cursor: pointer;
+  color: #fff;
+  z-index: 5;
+  position: absolute;
+  top: 50%;
+}
+.arrow:hover {
+  color: var(--violet_light);
+}
+
+.arrowleft {
+  left: 40px;
+}
+.arrowright {
+  right: 40px;
+}
+
+.arrow svg {
+  width: 50px;
+  height: 50px;
+}
+
+.child {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  width: 100%;
+}
+
+.child::-webkit-scrollbar {
+  display: none;
+}
+
+.child div:first-child {
+  margin-left: 0;
+}
+
+/* tablet */
+@media (max-width: 780px) {
+  .carousel {
+    padding: 10px 20px 10px 30px;
+  }
+  .arrowleft {
+    left: 30px;
+  }
+  .arrowright {
+    right: 30px;
+  }
+}
+
+/* celular */
+@media (max-width: 600px) {
+  .arrow {
+    display: none !important;
+  }
+}

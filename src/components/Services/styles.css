@@ -5,6 +5,7 @@
 
 .buttons {
   width: 100%;
+  border-top: 3px solid #fff;
 }
 
 .buttons button {
@@ -21,22 +22,15 @@
   background: var(--violet_dark) !important;
 }
 
-.container {
-  width: 100%;
-  display: flex;
-  padding: 10px 50px;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
 /* card */
 .card {
   width: 224px;
+  min-width: 224px;
   height: 300px;
   cursor: pointer;
   border: 3px solid var(--red);
   border-radius: 10px;
-  margin: 10px 0px;
+  margin: 20px 20px;
   position: relative;
   overflow: hidden;
 }
@@ -52,11 +46,7 @@
   right: 0;
   bottom: 0;
   background: rgba(30, 3, 43, 0.5);
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-  transition-property: top;
-  transition-duration: 500;
 }
-
 
 .card .title {
   font-weight: 500;
@@ -72,4 +62,16 @@
   color: #fff;
   text-align: justify;
   padding: 0 15px;
+}
+
+
+/* celular */
+@media (max-width: 600px) {
+  .over_card {
+    top: 0 !important;
+  }
+  .card .description {
+    display: block !important;
+    font-size: 14px !important;
+  }
 }
