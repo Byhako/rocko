@@ -17,3 +17,18 @@
   right: 0;
   left: 0;
 }
+
+/* tablet */
+@media (max-width: 780px) {
+  .landing {
+    background-image: url('../../images/landing2.jpg');
+  }
+}
+
+/* celular */
+@media (max-width: 600px) {
+  .landing {
+    background-image: url('../../images/landing3.jpg');
+    height: 75vh;
+  }
+}
