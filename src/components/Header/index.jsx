@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { RiPhoneLine } from "react-icons/ri"
 import { GoMail } from "react-icons/go"
 import logo1 from '../../images/logo.svg'
-import logo2 from '../../images/logo2.svg'
+import logo2 from '../../images/logo3.svg'
 import './styles.css'
 
 export default function Header() {
@@ -17,7 +17,7 @@ export default function Header() {
         setState('light fix')
       } else if (scrollY >= 200) {
         setState('fix dark')
-        setIsActive('about')
+        setIsActive('services')
       } else {
         setState('light')
         setIsActive('')

@@ -13,7 +13,7 @@ function App() {
       <Landing />
       <Services />
       {/* <Contact /> */}
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
