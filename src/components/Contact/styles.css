@@ -16,7 +16,7 @@
   margin-bottom: 30px;
 }
 
-.contact img {
+.items img {
   width: 20px;
 }
 
@@ -50,15 +50,6 @@
 }
 
 
-.images {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  background: var(--dark);
-  padding: 20px;
-  margin: 20px 0 0;
-}
-
-.images img {
+.imgfooter {
   width: 100px;
 }

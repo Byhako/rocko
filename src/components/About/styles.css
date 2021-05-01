@@ -59,3 +59,38 @@
 .about-list li {
   margin-bottom: 5px;
 }
+
+/* tablet */
+@media (max-width: 780px) {
+  .about {
+    background-image: url("../../images/about2.jpg");
+  }
+  .about-content {
+    width: 80%;
+  }
+  .over2 {
+    justify-content: center;
+  }
+}
+
+/* tablet */
+@media (max-width: 600px) {
+  .about-content {
+    width: 100%;
+  }
+  .about {
+    background-image: url("../../images/about2.jpg");
+  }
+}
+
+@media (min-width: 1000px) {
+  .about-text {
+    font-size: 16px;
+  }
+  .about-list {
+    font-size: 16px;
+  }
+  .about-content {
+    padding: 10px 50px;
+  }
+}

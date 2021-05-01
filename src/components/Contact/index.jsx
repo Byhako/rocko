@@ -1,4 +1,5 @@
 import React from 'react'
+import Carousel from '../Carousel'
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 import face from '../../images/face.png'
@@ -32,10 +33,13 @@ export default function Contact() {
       </div>
 
       <div className="images">
-        {images.map((item, index) => (
-          <img src={item} alt={index} key={index} />
-        ))}
       </div>
+
+      <Carousel height='140px' bg='solid' num={images.length}>
+        {images.map((item, index) => (
+          <img className='imgfooter' src={item} alt={index} key={index} />
+        ))}
+      </Carousel>
     </section>
   )
 }
