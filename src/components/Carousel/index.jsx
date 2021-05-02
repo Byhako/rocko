@@ -3,8 +3,14 @@ import { FaAngleLeft } from "react-icons/fa"
 import { FaAngleRight } from "react-icons/fa"
 import './styles.css'
 
+// bg --> el tipo de background, (vet, train solig)
+// height --> altura del carousel
+// children --> contenido del carrousel, divs o imagenes
+// num --> numero de items dentro del carousel
+// idx --> index que se usa para hacer scroll horizontal
+// size --> tamaño que ocupa cada item  with + margen
+
 export default function Carousel({ bg, height, children, num, idx, size }) {
-  
   const [scroll, setScroll] = useState(false)
 
   useEffect(() => {
