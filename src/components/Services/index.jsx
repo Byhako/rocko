@@ -22,13 +22,13 @@ export default function Services() {
 
       <>
         {service === 'train' ? (
-          <Carousel height='360px' bg='train' num={data.train.length} idx='train'>
+          <Carousel height='360px' bg='train' num={data.train.length} idx='train' size='280'>
             {data.train.map((item, index) => (
               <Card key={index} data={item} />
             ))}
           </Carousel>
         ) : (
-          <Carousel height='360px' bg='vet' num={data.vet.length} idx='vet'>
+          <Carousel height='360px' bg='vet' num={data.vet.length} idx='vet' size='280'>
           {data.vet.map((item, index) => (
               <Card key={index} data={item} />
             ))}

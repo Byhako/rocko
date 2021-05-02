@@ -37,7 +37,7 @@ export default function Contact() {
         </div>
       </div>
 
-      <Carousel height='190px' bg='solid' num={images.length} idx='footer'>
+      <Carousel height='190px' bg='solid' num={images.length} idx='footer' size={180}>
         {images.map((item, index) => (
           <img className='imgfooter' src={item} alt={index} key={index} />
         ))}

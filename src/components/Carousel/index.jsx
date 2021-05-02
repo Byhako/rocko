@@ -3,19 +3,19 @@ import { FaAngleLeft } from "react-icons/fa"
 import { FaAngleRight } from "react-icons/fa"
 import './styles.css'
 
-export default function Carousel({ bg, height, children, num, idx }) {
+export default function Carousel({ bg, height, children, num, idx, size }) {
   
   const [scroll, setScroll] = useState(false)
 
   useEffect(() => {
     const screem = window.innerWidth - 80;
 
-    if (num*280 >= screem) {
+    if (num*size >= screem) {
       setScroll(true)
     } else {
       setScroll(false)
     }
-  }, [num])
+  }, [num, size])
 
   const scrollRight = () => {
     const child = document.getElementById(idx)
