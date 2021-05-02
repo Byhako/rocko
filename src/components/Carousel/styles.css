@@ -24,7 +24,7 @@
   color: #fff;
   z-index: 5;
   position: absolute;
-  top: 50%;
+  top: calc(50% - 25px);
 }
 .arrow:hover {
   color: var(--violet_light);
@@ -56,11 +56,14 @@
 .child div:first-child {
   margin-left: 0;
 }
+.child img:first-child {
+  margin-left: 0;
+}
 
 /* tablet */
 @media (max-width: 780px) {
   .carousel {
-    padding: 10px 20px 10px 30px;
+    padding: 10px 20px 10px 20px;
   }
   .arrowleft {
     left: 30px;

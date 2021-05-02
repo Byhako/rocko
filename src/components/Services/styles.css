@@ -74,4 +74,7 @@
     display: block !important;
     font-size: 14px !important;
   }
+  .buttons button {
+    font-size: 22px;
+  }
 }

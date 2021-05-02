@@ -3,7 +3,7 @@ import { FaAngleLeft } from "react-icons/fa"
 import { FaAngleRight } from "react-icons/fa"
 import './styles.css'
 
-export default function Carousel({ bg, height, children, num }) {
+export default function Carousel({ bg, height, children, num, idx }) {
   
   const [scroll, setScroll] = useState(false)
 
@@ -18,13 +18,13 @@ export default function Carousel({ bg, height, children, num }) {
   }, [num])
 
   const scrollRight = () => {
-    const child = document.getElementById('child')
+    const child = document.getElementById(idx)
     const pos = child.scrollLeft + 100
     child.scrollTo(pos , 0)
   }
 
   const scrollLeft = () => {
-    const child = document.getElementById('child')
+    const child = document.getElementById(idx)
     const pos = child.scrollLeft - 100
     child.scrollTo(pos , 0)
   }
@@ -43,7 +43,7 @@ export default function Carousel({ bg, height, children, num }) {
       </div>
       <div
         className="child"
-        id='child'
+        id={idx}
         style={scroll ? {} : { justifyContent: 'space-around' }}
       >
         {children}

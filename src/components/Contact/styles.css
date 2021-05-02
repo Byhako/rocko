@@ -1,19 +1,24 @@
 .contact {
-  padding: 10px 50px;
+  padding: 10px 0 0;
   display: flex;
   flex-direction: column;
 }
 
+.contacto {
+  padding: 10px 40px;
+}
+
 .contact_title {
   font-size: 20px;
-  color: var(--yellow);
+  color: var(--violet_dark);
   font-weight: 500;
 }
 
 .contact-description {
-  color: var(--dark);
+  color: var(--violet_dark);
   font-size: 16px;
   margin-bottom: 30px;
+  text-align: justify;
 }
 
 .items img {
@@ -34,8 +39,8 @@
 .items a {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  color: var(--dark);
+  align-items: flex-end;
+  color: var(--violet_dark);
   text-decoration: none;
   margin-bottom: 15px;
 }
@@ -51,5 +56,27 @@
 
 
 .imgfooter {
-  width: 100px;
+  width: 150px;
+  margin: 0px 10px;
+}
+
+
+
+/* tablet */
+@media (max-width: 780px) {
+
+}
+
+/* celular */
+@media (max-width: 600px) {
+  .items {
+    flex-direction: column;
+    align-items: center;
+  }
+  .items div {
+    width: 100%;
+  }
+  .contacto {
+    padding: 10px 20px;
+  }
 }

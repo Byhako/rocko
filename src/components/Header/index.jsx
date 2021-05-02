@@ -57,9 +57,9 @@ export default function Header() {
           )}
         </a>
         <div className='links'>
-          <a href="#services" className={isActive === 'services' && 'active'}>Servicios</a>
-          <a href="#about" className={isActive === 'about' && 'active'}>Conóceme</a>
-          <a href="#contact" className={isActive === 'contact' && 'active'}>Contactame</a>
+          <a href="#services" className={isActive === 'services' ? 'active' : ''}>Servicios</a>
+          <a href="#about" className={isActive === 'about' ? 'active' : ''}>Conóceme</a>
+          <a href="#contact" className={isActive === 'contact' ? 'active' : ''}>Contactame</a>
         </div>
       </nav>
     </header>
